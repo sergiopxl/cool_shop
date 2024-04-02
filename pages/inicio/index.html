@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>:: Shop | Inicio ::</title>
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+  <script src="../../assets/js/navigation.js" defer></script>
+</head>
+
+<body>
+  <header id="cabecera-pagina">
+    <div class="cabecera-pagina-contenedor wrapper">
+      <div class="cabecera-pagina-logo">
+        <img srcset=" 
+        ../../assets/images/logo-p.png 45w,
+        ../../assets/images/logo-w.png 292w" sizes="(max-width:800px) 45px ,292px" src="../../assets/images/logo-w.png"
+          alt="">
+      </div>
+      <div class="cabecera-pagina-buscador">
+        <input type="search" id="buscador-input" placeholder="Busca articulo">
+        <button id="buscador-boton"></button>
+      </div>
+      <div class="cabecera-pagina-iconos">
+        <div class="icon icon-user"></div>
+
+        <div id="carro" class="icon icon-cart">
+          <span id="carro-cantidad-articulos">0</span>
+          <div id="carro-resumen" class="hidden">
+            <h3>TU CARRO</h3>
+            <div class="carro-articulos">
+              <div id="carro-articulo-template" class="hidden carro-articulo">
+                <span class="carro-articulo-nombre">nombre producto</span>
+                <span class="carro-articulo-precio">0.00€</span>
+                <span class="carro-articulo-cantidad"> x 0</span>
+                <i class="carro-articulo-eliminar"></i>
+              </div>
+              <div class="carro-importe-total">
+                <strong>Importe total: </strong>
+                <span class="carro-total-cifras">0.00€</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav id="navegacion-principal" class="wrapper">
+        <div class="icon-menu"></div>
+        <ul class="hidden-responsive"></ul>
+      </nav>
+  </header>
+  <main class="wrapper">
+    cuerpo
+  </main>
+  <footer id="pie-pagina">pie</footer>
+</body>
+
+</html>
