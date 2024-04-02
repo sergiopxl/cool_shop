@@ -1,0 +1,9 @@
+#pie-pagina{
+  border-top : 3px solid $blue-3;
+  padding-top: 1rem;
+  .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

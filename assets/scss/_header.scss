@@ -1,0 +1,59 @@
+#cabecera-pagina {
+
+  border-bottom: 3px solid $blue-3;
+
+  @media(max-width : $medium-responsive-width){
+    padding: $padding-regular;
+  }
+
+  .cabecera-pagina-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media(max-width : $medium-responsive-width){
+      width:calc(100% - 60px);
+      margin-left: calc(50px + .6rem);
+    }
+
+    .cabecera-pagina-buscador {
+      display: flex;
+      input {
+        height: 50px;
+        border: 2px solid $blue-2;
+        border-radius: .3rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: $padding-medium;
+        @media(max-width : $medium-responsive-width){
+          display: none;
+        }
+      }
+
+      button {
+
+        @include icono("../../assets/images/icon-lupa.png");
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+
+        @media(max-width : $medium-responsive-width){
+          border-top-left-radius: .3rem;
+          border-bottom-left-radius: .3rem;
+        }
+
+      }
+    }
+
+    .cabecera-pagina-iconos {
+      display: flex;
+      gap: .5rem;
+
+      .icon-user {
+        @include icono("../../assets/images/icon-user.png");
+      }
+
+      .icon-cart{
+        @include icono("../../assets/images/icon-cart.png");
+      }
+    }
+  }
+}

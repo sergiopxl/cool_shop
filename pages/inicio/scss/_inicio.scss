@@ -1,0 +1,48 @@
+.listado-productos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  .producto-miniatura{
+    position: relative;
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    flex: 1 0 max(160px ,calc(25% - .5rem));  
+    box-shadow: 0 0 5px #999;
+    padding: $padding-big;
+    border-radius: .5rem;
+    .flag-destacado,.flag-oferta{
+      position: absolute;
+      top:.5rem;
+      box-shadow: 0 0 3px #999;
+      padding: $padding-small;
+      color: white;
+    }
+    .flag-destacado{
+      left: 0;
+      background-color: $green-1;
+    }
+    .flag-oferta{
+      right: 0;
+      background-color: $pink-1;
+    }
+    .producto-precio{
+      font-family: $font2;
+      font-size: 2.5rem;
+      small{
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .producto-botones{
+    .btn-categoria{
+      @include btn($blue-1)
+    }
+    .btn-marca{
+      @include btn($blue-3)
+    }
+    .btn-comprar{
+      @include btn($green-1)
+    }
+  }
+}

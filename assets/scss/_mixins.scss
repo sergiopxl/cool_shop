@@ -1,0 +1,19 @@
+@mixin icono($backgroundImage){
+  background-color: $blue-2;
+  background-image: url($backgroundImage);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid $blue-2;
+  border-radius: .3rem;
+  display: block;
+  width: 50px;
+  height: 50px;
+  transition: all .5s;
+  cursor: pointer;
+  &:hover{
+    background-color: white;
+    background-size: 60%;
+  }
+
+}

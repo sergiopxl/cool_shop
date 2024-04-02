@@ -1,0 +1,45 @@
+#navegacion-principal{
+  @media(max-width : $medium-responsive-width){
+    position: absolute;
+    top: .5rem;
+  }
+  .icon-menu{
+    @include icono("../../assets/images/icon-menu.png");
+    display: none;
+
+    @media(max-width : $medium-responsive-width){
+      display: block;
+    }
+  }
+  ul{
+    display: flex;
+    gap: .5rem;
+    list-style: none;
+    padding-left: 0;
+
+    @media(max-width : $medium-responsive-width){
+      position: absolute;
+      left: -.5rem;
+      flex-direction: column;
+      border-right: 3px solid $blue-3;
+      padding: $padding-regular;
+      background-color: white;
+      transition: all .5s;
+      height: calc(100vh - 70px);
+      width: 75vw;
+      top: 37px;
+      font-size: 1.5rem;
+      &.hidden-responsive{
+        left: -100vw;       
+      }
+    }
+    a{
+      padding: $padding-regular;
+      background-color: white;
+      transition: all .5s;
+      &:hover{
+        background-color: $blue-2;
+      }
+    }
+  }
+}
